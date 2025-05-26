@@ -29,7 +29,7 @@ function App() {
             setStatus("info");
             setMessage("A converter imagens...");
 
-            const endpoint = process.env.REACT_APP_ENDPOINT || "";
+            const endpoint = process.env.REACT_APP_ENDPOINT || "https://imgtools-backend.onrender.com/api/convert-image";
             const res = await fetch(endpoint, {
                 method: "POST",
                 body: formData,
