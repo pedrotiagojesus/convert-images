@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# 🖼️ Conversor de Imagens
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend de uma aplicação web que permite converter imagens para diversos formatos, incluindo formatos raster (JPEG, PNG, WEBP, TIFF, AVIF). Ideal para quem precisa converter múltiplas imagens de forma simples e rápida.
 
-## Available Scripts
+## 🚀 Funcionalidades
 
-In the project directory, you can run:
+- Envio de várias imagens de uma vez
+- Seleção do formato de saída: `jpeg`, `png`, `webp`, `tiff`, `avif`
+- Conversão de imagens raster
+- Download automático num ficheiro `.zip`
+- Interface moderna e responsiva com Bootstrap
 
-### `npm start`
+## 📦 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [React Scripts](https://www.npmjs.com/package/react-scripts)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## ⚙️ Como executar localmente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-requisitos
 
-### `npm run build`
+- Node.js (v16 ou superior)
+- npm ou yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clona o repositório:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/teu-usuario/image-converter-frontend.git
+cd image-converter-frontend
+```
 
-### `npm run eject`
+2. Instala as dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Cria um ficheiro `.env` com o endpoint da API de conversão:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+REACT_APP_CONVERT_ENDPOINT=http://localhost:3001/api/convert
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Inicia o projeto:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A aplicação abrirá automaticamente em `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 Licença
+Este projeto está licenciado sob a MIT License.
